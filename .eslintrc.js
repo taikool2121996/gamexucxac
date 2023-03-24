@@ -1,5 +1,5 @@
 /* eslint-disable */
-const { off } = require("process");
+const { off } = require('process');
 
 module.exports = {
   extends: [
@@ -20,7 +20,7 @@ module.exports = {
     ],
 
     // custom rule
-    '@typescript-eslint/no-use-before-define': 0,
+    '@typescript-eslint/no-unused-vars': 'error',
   },
   parserOptions: {
     project: './tsconfig.eslint.json',
