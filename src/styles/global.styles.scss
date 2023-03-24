@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Pony';
+  src: url('../../public/assets/fonts/Pony.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@import 'bootstrap/dist/css/bootstrap.css';
+
+:root {
+  --bs-body-font-family: 'Pony'
+}
