@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint:es && yarn lint:style",
     "lint:es": "eslint . --ext ts,tsx,js",
-    "lint:style": "stylelint 'src/**/styled.ts' 'src/**/*.tsx'",
+    "lint:style": "stylelint \"src/**/styled.ts\" \"src/**/*.tsx\" \"src/**/*.scss\"",
     "prepare": "husky install"
   },
   "lint-staged": {
@@ -34,6 +34,8 @@
     "typescript": "5.0.2"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
     "eslint": "^8.2.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.8.0",

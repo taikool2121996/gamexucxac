@@ -1,10 +1,12 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import React from 'react';
+import Head from 'next/head';
+import Image from 'next/image';
+import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] })
-const testhusk = 0;
+import styles from '@/styles/Home.module.css';
+
+const inter = Inter({ subsets: ['latin'] });
+const testhusky = 0;
 
 export default function Home() {
   return (
@@ -120,5 +122,5 @@ export default function Home() {
         </div>
       </main>
     </>
-  )
+  );
 }
