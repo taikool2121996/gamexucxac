@@ -1,3 +1,4 @@
+/* eslint-disable */
 // libs
 import { FC } from 'react';
 
@@ -5,7 +6,7 @@ import { FC } from 'react';
 import DiceGame from '../Components/DiceGame/index';
 
 const Lobby: FC = () => {
-  return <DiceGame />;
+  return <DiceGame />
 };
 
 export default Lobby;

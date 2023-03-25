@@ -2,11 +2,14 @@
 import { FC } from 'react';
 // styled-components
 import { GameInfoWrapper } from './GameInfo.styles';
+// hooks
+import { useAppSelector } from '../../store/hook';
 
 const GameInfo: FC = () => {
-  const taiXiu = true;
-  const soBanThang = 3;
-  const soBanChoi = 3;
+  const { taiXiu, soBanThang, soBanChoi } = useAppSelector(
+    (state) => state.diceGame,
+  );
+
   return (
     <GameInfoWrapper className="pt-5">
       <h1>

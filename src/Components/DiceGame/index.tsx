@@ -15,13 +15,19 @@ import {
 // hooks
 import { useAppSelector, useAppDispatch } from '../../store/hook';
 // others
-import { pickTaiXiu } from '../../store/reducers/diceGame/diceGame.slice';
+import {
+  pickTaiXiu,
+  datCuoc,
+} from '../../store/reducers/diceGame/diceGame.slice';
 
 const DiceGame: FC = () => {
   const dispatch = useAppDispatch();
   const taiXiu = useAppSelector((state) => state.diceGame.taiXiu);
   const pickDice = (value: boolean) => {
     dispatch(pickTaiXiu(value));
+  };
+  const datCuocDi = () => {
+    dispatch(datCuoc());
   };
   return (
     <GameContainer>
@@ -57,8 +63,8 @@ const DiceGame: FC = () => {
         <InfoSection className="text-center">
           <GameInfo />
           <button
-            className="btn btn-success mt-4 px-4 py-2"
-            onClick={() => console.log('onClick')}
+            className="btn btn-danger mt-4 px-4 py-2"
+            onClick={() => datCuocDi()}
           >
             ĐẶT CƯỢC
           </button>
