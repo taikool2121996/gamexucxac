@@ -16,7 +16,10 @@ const DiceGame: FC = () => {
   return (
     <GameContainer>
       <BackgroundImage>
-        <img src="/assets/images/bgGame.png" alt="Background image" />
+        <img
+          src="https://user-images.githubusercontent.com/72439970/227679244-34ed1bbb-cff8-48f0-9feb-3ca4ee9db1ef.png"
+          alt="Background image"
+        />
       </BackgroundImage>
       <GameTitle className="text-center py-5">GAME ĐỔ XÚC XẮC REDUX</GameTitle>
       <GameSection className="container-fluid">
