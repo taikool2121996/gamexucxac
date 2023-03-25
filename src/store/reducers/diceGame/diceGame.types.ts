@@ -6,6 +6,6 @@ export type IDiceGame = {
 };
 
 export type IDice = {
-  diem: number;
-  hinhAnh: string;
+  value: number;
+  image: string;
 };

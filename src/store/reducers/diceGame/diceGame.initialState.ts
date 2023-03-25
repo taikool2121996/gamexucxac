@@ -6,8 +6,20 @@ export const initialState: IDiceGame = {
   soBanChoi: 0,
   mangXucXac: [
     // Đường dẫn chỉ cần ./images là bởi vì lúc này giao diện đã được render ra ở index.html
-    { diem: 1, hinhAnh: '../../../../public/assets/images/1.png' },
-    { diem: 1, hinhAnh: '../../../../public/assets/images/1.png' },
-    { diem: 1, hinhAnh: '../../../../public/assets/images/1.png' },
+    {
+      value: 1,
+      image:
+        'https://user-images.githubusercontent.com/72439970/227680252-6d6b8721-affc-401a-bc60-8e3b6a8bd3bf.png',
+    },
+    {
+      value: 1,
+      image:
+        'https://user-images.githubusercontent.com/72439970/227680252-6d6b8721-affc-401a-bc60-8e3b6a8bd3bf.png',
+    },
+    {
+      value: 1,
+      image:
+        'https://user-images.githubusercontent.com/72439970/227680252-6d6b8721-affc-401a-bc60-8e3b6a8bd3bf.png',
+    },
   ],
 };
