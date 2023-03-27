@@ -15,32 +15,32 @@ export const diceGameSlice = createSlice({
         {
           value: 1,
           image:
-            'https://user-images.githubusercontent.com/72439970/227680252-6d6b8721-affc-401a-bc60-8e3b6a8bd3bf.png',
+            'https://res.cloudinary.com/dspvt4i0c/image/upload/v1679905583/gamexucxac/01_vgyujk.png',
         },
         {
           value: 2,
           image:
-            'https://user-images.githubusercontent.com/72439970/227680255-24833a01-498f-4f7e-9661-97cadda614ee.png',
+            'https://res.cloudinary.com/dspvt4i0c/image/upload/v1679905583/gamexucxac/02_ilbzga.png',
         },
         {
           value: 3,
           image:
-            'https://user-images.githubusercontent.com/72439970/227680257-ac0aeea2-354b-4273-a110-eac40e91a3f1.png',
+            'https://res.cloudinary.com/dspvt4i0c/image/upload/v1679905583/gamexucxac/03_w6hvrg.png',
         },
         {
           value: 4,
           image:
-            'https://user-images.githubusercontent.com/72439970/227680259-28d61d03-a470-4728-8f28-cae594060d8b.png',
+            'https://res.cloudinary.com/dspvt4i0c/image/upload/v1679905583/gamexucxac/04_ejyv1h.png',
         },
         {
           value: 5,
           image:
-            'https://user-images.githubusercontent.com/72439970/227680260-46fd6c30-1873-44c3-9887-b2b309dcfc49.png',
+            'https://res.cloudinary.com/dspvt4i0c/image/upload/v1679905584/gamexucxac/05_z4his6.png',
         },
         {
           value: 6,
           image:
-            'https://user-images.githubusercontent.com/72439970/227680265-f50ecd55-c25c-4c97-8730-0a9b4bd4a69e.png',
+            'https://res.cloudinary.com/dspvt4i0c/image/upload/v1679905584/gamexucxac/06_ixe4d1.png',
         },
       ];
 
