@@ -21,6 +21,7 @@ import {
 } from '../../store/reducers/diceGame/diceGame.slice';
 
 const DiceGame: FC = () => {
+  const unVar = 0;
   const dispatch = useAppDispatch();
   const taiXiu = useAppSelector((state) => state.diceGame.taiXiu);
   const pickDice = (value: boolean) => {
