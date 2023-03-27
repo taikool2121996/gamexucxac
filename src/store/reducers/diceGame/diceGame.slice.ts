@@ -68,7 +68,6 @@ export const diceGameSlice = createSlice({
       const tongDiemXucXac = mangXucXacRandom.reduce((tongDiem, xucXac) => {
         return (tongDiem += xucXac.value);
       }, 0);
-      console.log('tongDiemXucXac', tongDiemXucXac);
 
       // Kiểm tra số bàn thắng
       if (
