@@ -58,7 +58,7 @@ export const diceGameSlice = createSlice({
           value: soNgauNhien,
           image: result[0].image, // Đường dẫn chỉ cần ./images là bởi vì lúc này giao diện đã được render ra ở index.html
         };
-
+        console.log(xucXacNgauNhien.image);
         mangXucXacRandom.push(xucXacNgauNhien);
       }
 
