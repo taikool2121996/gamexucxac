@@ -11,38 +11,38 @@ export const diceGameSlice = createSlice({
     },
     datCuoc: (state) => {
       const mangXucXacRandom = [];
-      // const mang6XucXac = [
-      //   {
-      //     value: 1,
-      //     image:
-      //       'https://res.cloudinary.com/dspvt4i0c/image/upload/v1679905583/gamexucxac/01_vgyujk.png',
-      //   },
-      //   {
-      //     value: 2,
-      //     image:
-      //       'https://res.cloudinary.com/dspvt4i0c/image/upload/v1679905583/gamexucxac/02_ilbzga.png',
-      //   },
-      //   {
-      //     value: 3,
-      //     image:
-      //       'https://res.cloudinary.com/dspvt4i0c/image/upload/v1679905583/gamexucxac/03_w6hvrg.png',
-      //   },
-      //   {
-      //     value: 4,
-      //     image:
-      //       'https://res.cloudinary.com/dspvt4i0c/image/upload/v1679905583/gamexucxac/04_ejyv1h.png',
-      //   },
-      //   {
-      //     value: 5,
-      //     image:
-      //       'https://res.cloudinary.com/dspvt4i0c/image/upload/v1679905584/gamexucxac/05_z4his6.png',
-      //   },
-      //   {
-      //     value: 6,
-      //     image:
-      //       'https://res.cloudinary.com/dspvt4i0c/image/upload/v1679905584/gamexucxac/06_ixe4d1.png',
-      //   },
-      // ];
+      const mang6XucXac = [
+        {
+          value: 1,
+          image:
+            'https://res.cloudinary.com/dspvt4i0c/image/upload/v1679905583/gamexucxac/01_vgyujk.png',
+        },
+        {
+          value: 2,
+          image:
+            'https://res.cloudinary.com/dspvt4i0c/image/upload/v1679905583/gamexucxac/02_ilbzga.png',
+        },
+        {
+          value: 3,
+          image:
+            'https://res.cloudinary.com/dspvt4i0c/image/upload/v1679905583/gamexucxac/03_w6hvrg.png',
+        },
+        {
+          value: 4,
+          image:
+            'https://res.cloudinary.com/dspvt4i0c/image/upload/v1679905583/gamexucxac/04_ejyv1h.png',
+        },
+        {
+          value: 5,
+          image:
+            'https://res.cloudinary.com/dspvt4i0c/image/upload/v1679905584/gamexucxac/05_z4his6.png',
+        },
+        {
+          value: 6,
+          image:
+            'https://res.cloudinary.com/dspvt4i0c/image/upload/v1679905584/gamexucxac/06_ixe4d1.png',
+        },
+      ];
 
       // Tăng tổng số bàn chơi 1 đơn vị mỗi khi bấm đặt cược
       state.soBanChoi += 1;
@@ -50,17 +50,14 @@ export const diceGameSlice = createSlice({
       // Random 3 con xúc xắc
       for (let i = 0; i < 3; i++) {
         const soNgauNhien = Math.floor(Math.random() * 6) + 1;
-        // const result = mang6XucXac.filter(
-        //   (xucxac) => xucxac.value == soNgauNhien,
-        // );
+        const result = mang6XucXac.filter(
+          (xucxac) => xucxac.value == soNgauNhien,
+        );
 
         const xucXacNgauNhien = {
           value: soNgauNhien,
-          // image: result[0].image, // Đường dẫn chỉ cần ./images là bởi vì lúc này giao diện đã được render ra ở index.html
-          image:
-            'https://res.cloudinary.com/dspvt4i0c/image/upload/v1679905584/gamexucxac/06_ixe4d1.png',
+          image: result[0].image, // Đường dẫn chỉ cần ./images là bởi vì lúc này giao diện đã được render ra ở index.html
         };
-        console.log(xucXacNgauNhien.image);
         mangXucXacRandom.push(xucXacNgauNhien);
       }
 

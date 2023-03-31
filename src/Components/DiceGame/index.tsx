@@ -31,11 +31,11 @@ const DiceGame: FC = () => {
   };
   return (
     <GameContainer>
-      <GameTitle className="text-center py-5">GAME ĐỔ XÚC XẮC REDUX</GameTitle>
+      <GameTitle className="text-center py-5">GAME ĐỔ XÚC XẮC</GameTitle>
       <GameSection className="container-fluid">
         <DiceSection className="row text-center">
           {/* Button Tài */}
-          <PickButton className="col-5">
+          <PickButton className="col-4">
             <button
               className={`btnTaiXiu ${taiXiu && 'btnTaiXiuSelected'}`}
               onClick={() => pickDice(true)}
@@ -45,12 +45,12 @@ const DiceGame: FC = () => {
           </PickButton>
 
           {/* 3 con xúc xắc */}
-          <div className="col-2 d-flex align-items-center justify-content-center">
+          <div className="col-4 d-flex align-items-center justify-content-center">
             <Dices />
           </div>
 
           {/* Button Xỉu */}
-          <PickButton className="col-5">
+          <PickButton className="col-4">
             <button
               className={`btnTaiXiu ${!taiXiu && 'btnTaiXiuSelected'}`}
               onClick={() => pickDice(false)}
