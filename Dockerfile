@@ -2,9 +2,9 @@
 FROM node:16-alpine
 
 RUN mkdir -p /usr/app/
-WORKDIR /usr/app
+WORKDIR /usr/src/app
 
-COPY . .
+COPY . /usr/src/app
 
 RUN npm install
 RUN npm run build

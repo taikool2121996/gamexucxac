@@ -31,7 +31,7 @@ const DiceGame: FC = () => {
   };
   return (
     <GameContainer>
-      <GameTitle className="text-center py-5">GAME ĐỔ XÚC XẮC</GameTitle>
+      <GameTitle className="text-center py-5">DICE GAME</GameTitle>
       <GameSection className="container-fluid">
         <DiceSection className="row text-center">
           {/* Button Tài */}
@@ -40,7 +40,7 @@ const DiceGame: FC = () => {
               className={`btnTaiXiu ${taiXiu && 'btnTaiXiuSelected'}`}
               onClick={() => pickDice(true)}
             >
-              TÀI
+              OVER
             </button>
           </PickButton>
 
@@ -55,7 +55,7 @@ const DiceGame: FC = () => {
               className={`btnTaiXiu ${!taiXiu && 'btnTaiXiuSelected'}`}
               onClick={() => pickDice(false)}
             >
-              XỈU
+              UNDER
             </button>
           </PickButton>
         </DiceSection>
@@ -66,7 +66,7 @@ const DiceGame: FC = () => {
             className="btn btn-danger mt-4 px-4 py-2"
             onClick={() => datCuocDi()}
           >
-            ĐẶT CƯỢC
+            PLACE BET
           </button>
         </InfoSection>
       </GameSection>
